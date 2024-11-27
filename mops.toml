@@ -1,0 +1,3 @@
+[dependencies]
+base = "0.13.3"
+bitcoin = "0.1.0"

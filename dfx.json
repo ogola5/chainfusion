@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "icrc1_ledger_canister": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/aba60ffbc46acfc8990bf4d5685c1360bd7026b9/rs/ledger_suite/icrc1/ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/aba60ffbc46acfc8990bf4d5685c1360bd7026b9/canisters/ic-icrc1-ledger.wasm.gz"
+    },
+
+    "smart_transfer_backend": {
+      "main": "src/smart_transfer_backend/main.mo",
+      "type": "motoko",
+      "dependencies": ["icrc1_ledger_canister"]
+    },
+    "smart_transfer_frontend": {
+      "dependencies": [
+        "smart_transfer_backend"
+        
+      ],
+      "source": [
+        "src/smart_transfer_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "smart_transfer_frontend"
+    },
+    "BitcoinIntegration": {
+      "main": "src/BitcoinIntegration/BitcoinIntegration.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

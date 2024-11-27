@@ -62,39 +62,31 @@ This project leverages Motoko language for building decentralized applications o
 ## Usage
 
 ### Register a User
-```motoko
+
 register("username");
 Send a Message
-motoko
-Copy code
+
 sendMessage("Hello, World!");
 Retrieve Messages
-motoko
-Copy code
+
 getMessages();
 Verify Information
-motoko
-Copy code
+
 verifyInformation("Sample Info");
 Vote for a Verifier
-motoko
-Copy code
+
 voteVerifier("VerifierUsername");
 Query Bitcoin Balance
-motoko
-Copy code
+
 getBitcoinBalance();
 Send Bitcoin
-motoko
-Copy code
+
 sendBitcoin("RecipientUsername", 1000000);
 Mint ckBTC
-motoko
-Copy code
+
 mintCKBTC(1000000);
 Transfer ckBTC
-motoko
-Copy code
+
 transferCKBTC("RecipientUsername", 1000000);
 Contribution
 Contributions are welcome! Feel free to fork this repository and submit pull requests.
@@ -102,7 +94,6 @@ Contributions are welcome! Feel free to fork this repository and submit pull req
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-vbnet
-Copy code
+
 
 Let me know if you'd like any adjustments or further details added!# chainfusion
